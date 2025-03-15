@@ -60,6 +60,7 @@ public class CraftPlayer extends CraftHumanEntity implements Player {
     private boolean hasPlayedBefore = false;
     private int hash = 0;
     private double health = 20;
+    private String status = "default";
     // Spigot start
     private final Player.Spigot spigot = new Player.Spigot() {
         @Override
@@ -1526,5 +1527,12 @@ public class CraftPlayer extends CraftHumanEntity implements Player {
         throw new UnsupportedOperationException(CrucibleMetadata.NECRO_TEMPUS_REQUIRED);
     }
 
+    public void setStatus(String status){
+        this.status = status;
+    }
+
+    public String getStatus(){
+        return this.status;
+    }
     // Crucible end
 }

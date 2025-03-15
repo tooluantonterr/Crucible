@@ -359,37 +359,37 @@ public final class CraftServer implements Server {
 
     private void setVanillaCommands() {
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandAchievement(), "/achievement give <stat_name> [player]"));
-        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandBanPlayer(), "/ban <playername> [reason]"));
+/*        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandBanPlayer(), "/ban <playername> [reason]"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandBanIp(), "/ban-ip <ip-address|playername>"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandListBans(), "/banlist [ips]"));
-        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandClearInventory(), "/clear <playername> [item] [metadata]"));
+        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandClearInventory(), "/clear <playername> [item] [metadata]"));*/
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandDefaultGameMode(), "/defaultgamemode <mode>"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandDeOp(), "/deop <playername>"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandDifficulty(), "/difficulty <new difficulty>"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandEffect(), "/effect <player> <effect|clear> [seconds] [amplifier]"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandEnchant(), "/enchant <playername> <enchantment ID> [enchantment level]"));
-        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandGameMode(), "/gamemode <mode> [player]"));
+/*        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandGameMode(), "/gamemode <mode> [player]"));*/
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandGameRule(), "/gamerule <rulename> [true|false]"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandGive(), "/give <playername> <item> [amount] [metadata] [dataTag]"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandHelp(), "/help [page|commandname]"));
-        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandSetPlayerTimeout(), "/setidletimeout <Minutes until kick>"));
+/*        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandSetPlayerTimeout(), "/setidletimeout <Minutes until kick>"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandServerKick(), "/kick <playername> [reason]"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandKill(), "/kill [playername]"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandListPlayers(), "/list"));
-        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandEmote(), "/me <actiontext>"));
+        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandEmote(), "/me <actiontext>"));*/
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandOp(), "/op <playername>"));
-        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandPardonPlayer(), "/pardon <playername>"));
+/*        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandPardonPlayer(), "/pardon <playername>"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandPardonIp(), "/pardon-ip <ip-address>"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandPlaySound(), "/playsound <sound> <playername> [x] [y] [z] [volume] [pitch] [minimumVolume]"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandBroadcast(), "/say <message>"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandScoreboard(), "/scoreboard"));
-        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandShowSeed(), "/seed"));
+        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandShowSeed(), "/seed"));*/
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandSetBlock(), "/setblock <x> <y> <z> <tilename> [datavalue] [oldblockHandling] [dataTag]"));
-        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandSetDefaultSpawnpoint(), "/setworldspawn [x] [y] [z]"));
+/*        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandSetDefaultSpawnpoint(), "/setworldspawn [x] [y] [z]"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandSetSpawnpoint(), "/spawnpoint <playername> [x] [y] [z]"));
-        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandSpreadPlayers(), "/spreadplayers <x> <z> [spreadDistance] [maxRange] [respectTeams] <playernames>"));
+        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandSpreadPlayers(), "/spreadplayers <x> <z> [spreadDistance] [maxRange] [respectTeams] <playernames>"));*/
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandSummon(), "/summon <EntityName> [x] [y] [z] [dataTag]"));
-        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandTeleport(), "/tp [player] <target>\n/tp [player] <x> <y> <z>"));
+/*        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandTeleport(), "/tp [player] <target>\n/tp [player] <x> <y> <z>"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandMessage(), "/tell <playername> <message>"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandMessageRaw(), "/tellraw <playername> <raw message>"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandTestFor(), "/testfor <playername | selector> [dataTag]"));
@@ -398,9 +398,9 @@ public final class CraftServer implements Server {
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandToggleDownfall(), "/toggledownfall"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandWeather(), "/weather <clear/rain/thunder> [duration in seconds]"));
         commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.server.CommandWhitelist(), "/whitelist (add|remove) <player>\n/whitelist (on|off|list|reload)"));
-        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandXP(), "/xp <amount> [player]\n/xp <amount>L [player]"));
-        // This is what is in the lang file, I swear.
-        commandMap.register("minecraft", new VanillaCommandWrapper(new CommandNetstat(), "/list"));
+        commandMap.register("minecraft", new VanillaCommandWrapper(new net.minecraft.command.CommandXP(), "/xp <amount> [player]\n/xp <amount>L [player]"));*/
+/*        // This is what is in the lang file, I swear.
+        commandMap.register("minecraft", new VanillaCommandWrapper(new CommandNetstat(), "/list"));*/
     }
 
     private void loadPlugin(Plugin plugin) {
